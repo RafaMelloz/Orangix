@@ -88,7 +88,7 @@ nav h1{
 }
 
 .inputGroup {
-    width: 40%;
+    width: 55%;
     position: relative;
 }
 
@@ -237,8 +237,27 @@ footer a:hover{
 
 
 
+@media screen and (max-width:768px){
+    .tamanho-poster{
+        width: 49%;
+    }
+}
 
+@media screen and (max-width:516px) {
+    .inputGroup{
+        width: 70%;
+    }
+    .inputGroup label {
+        font-size: 80%;
+        padding: 1.2em;
+    }
+}
 
+@media screen and (max-width:450px) {
+    .tamanho-poster {
+        width: 90%;
+    }
+}
 
 
  
