@@ -35,9 +35,8 @@ html,body{
     margin-top: 10px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    height: calc(100% - 34px);
     align-items: center;
+    flex-direction: column
 }
 
 
@@ -135,12 +134,14 @@ input:focus, input:valid {
     justify-content: space-around;
 }
 
-
 .tamanho-poster{
-    width: 24%;
-    height: 450px;
+    width: 30%;
+    display: flex;
+    height: 250px;
     margin-bottom: 25px;
     transition: all 0.3s ease-in-out;
+    border: var(--bordaPadrao);
+    border-radius: 6px;
 }
 
 .tamanho-poster:hover{
@@ -154,49 +155,47 @@ input:focus, input:valid {
 
 .posterFilme{
     width: 100%;
-    height: calc(100% - 100px);
+    height: 100%;
     background-position: center;
     background-size: cover;
-    border-left:var(--bordaPadrao);
-    border-right: var(--bordaPadrao);
-    border-top: var(--bordaPadrao);
     border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    
-    
+    border-bottom-left-radius: 6px;
 }
 
 .controllers-poster{
     padding: 5px 2%;
-    height: calc(100% - 350px);
+    height:100%;
     width: 100%;
     background-color: #f76c0a17;
-    border-left: var(--bordaPadrao);
-    border-right: var(--bordaPadrao);
-    border-bottom: var(--bordaPadrao);
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
-.btn-dark{
-    font-size: 14px;
-    width: 50%;
+.btn-poster{
+    margin-top: 15px;
+    font-size: 16px;
+    width: 75%;
     border: none;
-    background: #f9a100;
-    color: black;
+    background: #8f5d04;
     font-weight: 900;
-    padding: 5px;
-    border-radius: 4px;
+    padding: 8px;
+    border-radius: 29px;
     font-family: 'Noto Sans', sans-serif;
+    transition: ease-in-out 0.5s;
+
 }
 
+.btn-poster:hover{
+    background: #d38703;
+}
 
 
 
 
 .dark-modal{
-    background-color: #333333!important;
+    background-color: rgb(19, 19, 19)!important;
     border: var(--bordaPadrao)!important;
 }
 
